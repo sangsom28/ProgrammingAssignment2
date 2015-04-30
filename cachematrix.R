@@ -2,8 +2,34 @@
 ## functions do
 
 ## Write a short comment describing this function
+ m <- NULL
+  set <- function(y) {
+    x <<- y
+    m <<- NULL
+  }
+  get <- function() x
+  setinv <- function(solve) m <<- solve
+  getinv <- function() m
+  list(set = set, get = get,
+       setinv = setinv,
+       getinv = getinv)
+  
+}
 
 makeCacheMatrix <- function(x = matrix()) {
+ m <- NULL
+  set <- function(y) {
+    x <<- y
+    m <<- NULL
+  }
+  get <- function() x
+  setinv <- function(solve) m <<- solve
+  getinv <- function() m
+  list(set = set, get = get,
+       setinv = setinv,
+       getinv = getinv)
+  
+}
 
 }
 
